@@ -1,0 +1,68 @@
+ .background {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+
+	display: block;
+	background: #000 url(../images/artwork/manning_alaska/ma_front.jpg);
+	width: 975px;
+	height: 180px;
+	background-size: cover;
+}
+
+@font-face {
+	font-family: 'FuturaRenerRegular';
+	src: url('fonts/futura_regular-webfont.eot');
+	src: local('☺'), url('fonts/futura_regular-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/futura_regular-webfont.woff') format('woff'),url('fonts/futura_regular-webfont.ttf') format('truetype'),url('fonts/futura_regular-webfont.svg#FuturaRenerRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FuturaRenerLight';
+	src: url('futura_light-webfont.eot');
+	src: local('☺'), url('fonts/futura_light-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/futura_light-webfont.woff') format('woff'),url('fonts/futura_light-webfont.ttf') format('truetype'),url('fonts/futura_light-webfont.svg#FuturaRenerLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.content {
+	padding: 20px;
+
+}
+.logo {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	font-size: 2.6em;
+	font-weight: bold;
+	letter-spacing: 0.15em;
+	color: #fff;
+	opacity: 1;
+	
+	font-family: 'Oxygen', sans-serif;
+	z-index: 3;
+}
+.logo span {
+	font-family: 'FuturaRenerRegular', sans-serif;
+}
+
+.logo.blur {
+	z-index: 2;
+	opacity: 1;
+	color: #000;
+	-webkit-filter: blur(4px);
+}
+.logo.blur.blur2 {
+	z-index: 1;
+	-webkit-filter: blur(8px);
+}
+
+.logo-ma {
+	position: absolute;
+	top: 115px;
+	left: 20px;
+	font-size: 2.2em;
+}
+

@@ -1,0 +1,155 @@
+ .background {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+
+	display: block;
+	background: #000 url(../images/artwork/manning_alaska/ma_front.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+@font-face {
+	font-family: 'FuturaRenerRegular';
+	src: url('fonts/futura_regular-webfont.eot');
+	src: local('☺'), url('fonts/futura_regular-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/futura_regular-webfont.woff') format('woff'),url('fonts/futura_regular-webfont.ttf') format('truetype'),url('fonts/futura_regular-webfont.svg#FuturaRenerRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FuturaRenerLight';
+	src: url('futura_light-webfont.eot');
+	src: local('☺'), url('fonts/futura_light-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/futura_light-webfont.woff') format('woff'),url('fonts/futura_light-webfont.ttf') format('truetype'),url('fonts/futura_light-webfont.svg#FuturaRenerLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+h1, h2, h3 {
+	letter-spacing: 0.1em;
+	padding: 0;
+}
+h2 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.content {
+	padding: 20px;
+	color: #fff;
+	font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+	margin: 4px 0 8px 0;
+	text-indent: -10000px;
+	background: transparent url(../images/logo/cities_gold_260.png) no-repeat top left;
+	width: 260px;
+	height: 39px;
+	/*
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	font-family: 'FuturaRenerRegular', sans-serif;
+	*/
+}
+h1 a, h1 a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.strapline {
+	opacity: 0.7;
+	margin-bottom: 14px;
+}
+
+.block {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	margin: 0 0 10px 0;
+}
+.block h2 {
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	font-size: 1.3em;
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+}
+.block h3 {
+	font-size: 1em;
+	margin: 0 0 10px 0;
+}
+.block p {
+	opacity: 0.9;
+}
+.block p.hint {
+	font-size: 0.85em;
+	opacity: 0.7;
+}
+.block .artwork {
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	margin: 0 10px 10px 0;
+}
+
+.block.manning_alaska {
+	padding: 10px 10px 0 10px;
+}
+.block.bio p {
+	max-width: 640px;
+}
+
+
+
+
+
+
+.audiojs .play-pause {
+	width: 38px;
+}
+
+ol.tracklist { 
+	padding: 0px; 
+	margin: 0 0 10px 0; 
+	list-style: decimal-leading-zero inside; 
+	color: #ccc; 
+	width: 460px; 
+	border-top: 1px solid rgba(255, 255, 255, 0.4);
+	font-size: 0.9em; 
+}
+ol.tracklist li { 
+	color: rgba(255, 255, 255, 0.6);
+	position: relative; 
+	margin: 0px; 
+	padding: 9px 2px 10px; 
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	cursor: pointer; 
+}
+ol.tracklist li a { 
+	display: block; 
+	text-indent: -3.3ex; 
+	padding: 0px 0px 0px 20px; 
+}
+ol.tracklist li.playing { 
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3); 
+}
+ol.tracklist li.playing a { 
+	color: rgba(255, 255, 255, 1);
+}
+ol.tracklist li.playing:before { 
+	content: '♬'; 
+	width: 14px; 
+	height: 14px; 
+	padding: 3px; 
+	line-height: 14px; 
+	margin: 0px; 
+	position: absolute; 
+	left: -24px; 
+	top: 9px; 
+	color: #fff; 
+	font-size: 13px; 
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); 
+}
